@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="073e4d0d-f24a-44f5-9d3b-f12c66b3edfd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module_4_1/fake_math.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_4_1/module_4_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_4_1/true_math.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module_4_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "KurbanAbdulaev04"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;KurbanAbdulaev04&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KurbanAbdulaev04/homeWork.git",
-    "accountId": "e4b427f8-99e7-4d57-856f-24aaf323f3e7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KurbanAbdulaev04/homeWork.git&quot;,
+    &quot;accountId&quot;: &quot;e4b427f8-99e7-4d57-856f-24aaf323f3e7&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2o44d8N6AP1NEKZBo1EflbN8qzb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,6 +46,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.module_4_1.executor": "Run",
+    "Python.module_4_2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }

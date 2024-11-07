@@ -22,31 +22,48 @@ class House:
         return self.number_of_floors
 
     def __eq__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
+        if isinstance(other, int):
+            return self.number_of_floors == other
+        elif isinstance(other, House):
             return self.number_of_floors == other.number_of_floors
 
+        # не уверен что есть нецельное число(число с плавающей точкой(float)) этажей
+        # и на строки не знаю надоли проверять (в условии задачи не сказано)
+
     def __lt__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
+        if isinstance(other, int):
+            return self.number_of_floors < other
+        elif isinstance(other, House):
             return self.number_of_floors < other.number_of_floors
 
     def __le__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
+        if isinstance(other, int):
+            return self.number_of_floors <= other
+        elif isinstance(other, House):
             return self.number_of_floors <= other.number_of_floors
 
     def __gt__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
+        if isinstance(other, int):
+            return self.number_of_floors > other
+        elif isinstance(other, House):
             return self.number_of_floors > other.number_of_floors
 
     def __ge__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
-            return self.number_of_floors >= other.number_of_floors
+        if isinstance(other, int):
+            return self.number_of_floors >= other
+        elif isinstance(other, House):
+            return self.number_of_floors >+ other.number_of_floors
 
     def __ne__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
+        if isinstance(other, int):
+            return self.number_of_floors != other
+        elif isinstance(other, House):
             return self.number_of_floors != other.number_of_floors
 
     def __add__(self, value):
         if isinstance(value, int):
+            self.number_of_floors += value
+        elif isinstance(value, House):
             self.number_of_floors += value
         return self
 

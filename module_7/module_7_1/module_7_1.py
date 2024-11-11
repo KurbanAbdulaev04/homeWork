@@ -12,10 +12,8 @@ class Product:
 
 
 class Shop:
-    __file_name = 'products.txt'
-    # что-бы создать текстовый файл
-    f = open(__file_name, 'w')
-    f.close()
+    def __init__(self):
+        self.__file_name = 'products.txt'
 
     def get_products(self):
         file = open(self.__file_name)
@@ -26,13 +24,13 @@ class Shop:
         return text
 
     def add(self, *products):
+        file = open(self.__file_name, 'a')
         for i in products:
             if self.get_products().find(i.name) == -1:
-                file = open(self.__file_name, 'a')
                 file.write(f'{i}\n')
-                file.close()
             else:
                 print(f'Продукт {i.name} уже есть в магазине')
+        file.close()
 
 s1 = Shop()
 p1 = Product('Potato', 50.5, 'Vegetables')

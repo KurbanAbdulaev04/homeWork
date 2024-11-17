@@ -1,13 +1,15 @@
+from random import randrange
+
+
 def is_prime(func):
     def wrapper(a, b, c):
         res = func(a, b, c)
         for i in range(2, int(res/2 + 1)):
-            if res % 1 == 0 and res % res == 0:
-                print('Составное')
+            if res % i == 0:
+                print(f'Составное')
                 return res
-            else:
-                print('Простое')
-                return res
+        print(f'Простое')
+        return res
     return wrapper
 
 
@@ -17,5 +19,5 @@ def sum_three(a, b, c):
     return total
 
 
-result = sum_three(3, 3, 3)
+result = sum_three(randrange(3, 10), randrange(3, 10), randrange(3, 10))
 print(result)

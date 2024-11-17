@@ -1,7 +1,6 @@
 from threading import Thread
 from time import sleep, time
 
-
 def write_words(word_count: int, file_name: str):
     with open(file_name, 'a', encoding='utf-8') as file:
         print(f'Началась запись в файл {file_name}')
@@ -38,4 +37,4 @@ flow3.join()
 flow4.join()
 
 end_time2 = time()
-print(f'Время работы в многопоточном режиме: {round(end_time2-start_time2, 2)}\n')
+print(f'Время работы в многопоточном режиме: {round(end_time2-start_time2, 2)}')

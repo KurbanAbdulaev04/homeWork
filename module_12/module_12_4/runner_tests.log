@@ -1,0 +1,16 @@
+2024-11-28 11:50:11,571 <-> WARNING <-> Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\homeWork\module_12\module_12_4\tests_12_4.py", line 27, in test_run
+    class_obj_run = Run_1(True)
+                    ^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\homeWork\module_12\required_file\rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано bool
+2024-11-28 11:50:11,573 <-> WARNING <-> Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\homeWork\module_12\module_12_4\tests_12_4.py", line 15, in test_walk
+    class_obj_walk = Run_1('Name', -3)
+                     ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\homeWork\module_12\required_file\rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -3

@@ -26,6 +26,8 @@ def initiate_db():
     ''')
 
     connection.commit()
+
+
 initiate_db()
 
 
@@ -46,7 +48,8 @@ def is_included(username):
 
 
 # for i in range(1, 5):
-#     cursor.execute(f'INSERT INTO Products(title, description, price) VALUES (?, ?, ?)', (f'Продукт {i}', f'Описани {i}', i*100))
+#     cursor.execute(f'INSERT INTO Products(title, description, price) VALUES (?, ?, ?)',
+#     (f'Продукт {i}', f'Описание {i}', i*100))
 # connection.commit()
 
 def get_all_products():

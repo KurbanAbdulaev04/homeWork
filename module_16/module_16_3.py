@@ -21,7 +21,7 @@ async def insert_user(username: Annotated[str, Path(min_length=3, max_length=100
 
 @app.put('/user/{user_id}/{username}/{age}')
 async def update_user(user_id: str, username: Annotated[str, Path(min_length=3, max_length=100,
-                                                    description='Enter your name', example='User')],
+                                                        description='Enter your name', example='User')],
                       age: int = Path(ge=18, le=120, description='Enter your age', example='20')) -> str:
     users[str(user_id)] = f'Имя: {username}, возраст: {age}'
     return f'The user {user_id} is updated'
